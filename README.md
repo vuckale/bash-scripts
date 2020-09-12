@@ -9,41 +9,53 @@ sudo chmod +x wifi-switch.sh
 ```
 ### **Bind it to keyboard shortcut using** [xbindkeys](https://linux.die.net/man/1/xbindkeys):
 
-#### Install xbindkeys:
+#### 1. Install xbindkeys:
 
-In debian based distributions run:
+* In debian based distributions run:
 ```bash
 sudo apt install xbindkeys
 ```
-In arch based distributions run:
+* In arch based distributions run:
 ```bash
 sudo pacman -S xbindkeys
 ```
 
-#### Generate xbindkeys config file:
+#### 2. Generate xbindkeys config file:
 
 ```bash
 xbindkeys -d > ~/.xbindkeysrc
 ```
 
-#### Add shortcut and point it to bash script:
+#### 3. Add shortcut and point it to bash script:
 
-Open config file with your favourite editor:
+* Open config file with your favourite editor:
 
 ```bash
 vi ~/.xbindkeysrc
 ```
-Add this to .xbindkeys if `wifi-switch.sh` is in your `home` directory:
+
+* Start `xbindkeys`:
+```bash
+xbindkeys
+```
+
+* Add this to .xbindkeys if `wifi-switch.sh` is in your `home` directory:
 ```
 "./wifi-switch.sh"
     alt+y
 ```
 or any other key combination. If `wifi-switch.sh` is not in your home directory point it to it with an absolute path to script.
 
-Reload the config file:
+* Reload the config file:
 ```bash
 killall -s1 xbindkeys
 ```
+or
+
+```bash
+xbindkeys --poll-rc
+```
+
 #### Further read on configuring xbindkeys:
 [https://wiki.archlinux.org/index.php/Xbindkeys](https://wiki.archlinux.org/index.php/Xbindkeys)
 
