@@ -3,7 +3,19 @@
 ### **Description:**
 A bash script for enabling/disabling wireless connection on linux based systems using [rfkill](https://linux.die.net/man/1/rfkill). Ideal for binding to a keyboard shortcut.
 
-### Before binding it to a keyboard shortcut you should make script executable:
+### **Dependencies**
+`rfkill` and `libnotify-bin` <br>
+
+copy paste friendly command for Debian based distros:
+```bash
+sudo apt install rfkill libnotify-bin
+```
+copy paste friendly command for Arch based distros:
+```bash
+sudo pacman -S rfkill libnotify-bin
+```
+
+### **Before binding it to a keyboard shortcut you should make script executable:**
 ```bash
 sudo chmod +x wifi-switch.sh
 ```
