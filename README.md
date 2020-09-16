@@ -40,15 +40,15 @@ xbindkeys -d > ~/.xbindkeysrc
 
 #### 3. Add shortcut and point it to bash script:
 
+* Start `xbindkeys`:
+```bash
+xbindkeys
+```
+
 * Open config file with your favourite editor:
 
 ```bash
 vi ~/.xbindkeysrc
-```
-
-* Start `xbindkeys`:
-```bash
-xbindkeys
 ```
 
 * Add this to .xbindkeys if `wifi-switch.sh` is in your `home` directory:
