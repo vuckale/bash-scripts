@@ -1,7 +1,7 @@
 ## wifi-switch.sh
 
 ### **Description:**
-A bash script for enabling/disabling wireless connection on linux based systems using [rfkill](https://linux.die.net/man/1/rfkill). Ideal for binding to a keyboard shortcut.
+Bash script for enabling/disabling wireless connection on linux based systems using [rfkill](https://linux.die.net/man/1/rfkill). Ideal for binding to a keyboard shortcut.
 
 ### **Dependencies**
 `rfkill` and `libnotify-bin` <br>
